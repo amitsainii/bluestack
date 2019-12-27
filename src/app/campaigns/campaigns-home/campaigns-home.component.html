@@ -1,0 +1,17 @@
+<div class="Panel">
+	<h1 class="page-heading">{{ 'titles.header' | translate }}</h1>
+	<div class="tabs-wrapper">
+		<nav>
+			<ul class="tabs">
+				<li class="tabs-tab tab" *ngFor="let tab of campaignTabs" [ngClass]="{'active': activeTab==tab.key}">
+					<a href="javascript:void(0)" (click)="setCurrentTab(tab.key)" target=_self>{{tab.title}}</a>
+				</li>
+				<li class="tabs-presentation-slider" role="presentation"></li> <!-- this is green bottom border that slides between the tabs -->
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<campaigns-table [data]="campaignData" (pricingClick)="onPricingClick($event)" [activeTab]="activeTab"></campaigns-table> <!-- seprate child component for table -->
+	</div>
+</div>
+<campaigns-pricing-modal [campaignData]="selectedCampaign" [showModal]="showModal" (modalClose)="onModalClose()"></campaigns-pricing-modal> <!-- seprate child component for modal -->

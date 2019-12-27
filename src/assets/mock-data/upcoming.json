@@ -1,0 +1,89 @@
+[{
+    "name": "Temple Run",
+    "region": "US",
+    "createdOn": 1579717800000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 500.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 900.00"
+      }
+    ],
+    "csv": "Some CSV link for Whatsapp",
+    "report": "Some report link for Whatsapp",
+    "image_url":"assets/images/games/com.png"  
+  },
+  {
+    "name": "Project IGI",
+    "region": "CA, FR",
+    "createdOn": 1581618600000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 200.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 600.00"
+      }
+    ],
+    "csv": "Some CSV link for Super Jewels Quest",
+    "report": "Some report link for Super Jewels Ques",
+    "image_url":"assets/images/games/nfs.png" 
+  },
+  {
+    "name": "Need for Speed™ Underground",
+    "region": "US",
+    "createdOn": 1583865000000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 200.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 300.00"
+      }
+    ],
+    "csv": "Some CSV link for Mole Slayer",
+    "report": "Some report link for Mole Slayer",
+    "image_url":"assets/images/games/auto-chess.png" 
+  },
+  {
+    "name": "PUBG Mobile",
+    "region": "JP",
+    "createdOn": 1582482600000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 30.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 60.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 100.00"
+      }
+    ],
+    "csv": "Some CSV link for Mancala Mix",
+    "report": "Some report link for Mancala Mix",
+    "image_url":"assets/images/games/pubg.png" 
+  }
+]

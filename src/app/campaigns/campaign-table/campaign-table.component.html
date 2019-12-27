@@ -1,0 +1,61 @@
+<div class="table-responsive"> <!--table-responsive class makes sure table do not overflow from parant container -->
+    <table>
+        <thead>
+            <tr>
+                <th>{{ 'columns.date' | translate }}</th>
+                <th>{{ 'columns.campaign' | translate }}</th>
+                <th>{{ 'columns.view' | translate }}</th>
+                <th>{{ 'columns.actions' | translate }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let campaign of data; let index = index">
+                <td>
+                    <div>
+                        <p class="cell-heading">{{formatDate(campaign.createdOn)}}</p>
+                        <p class="cell-sub-heading">{{getDayDiff(campaign.createdOn)}}</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex">
+                        <div>
+                            <!-- alt text is required for screen readers. it heplps on seo front as well -->
+                            <img [src]="campaign.image_url" class="campaign-thumb" alt="campaign image"/>
+                        </div>
+                        <div>
+                            <p class="cell-heading">{{campaign.name}}</p>
+                            <p class="cell-sub-heading">{{campaign.region}}</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="action-section">
+                        <div>
+                            <img src="assets/images/price.png" class="action-icon"/>
+                            <!-- javascript:void(0) is used to prevent the default behaviour of anchor -->
+                            <a href="javascript:void(0)" (click)="showPricing(campaign)">{{ 'actions.viewPricing' | translate }}</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="action-section">
+                        <div>
+                            <img src="assets/images/file.png" class="action-icon"/>
+                            <a href="javascript:void(0)">CSV</a>
+                        </div>
+                        <div class="cell-middle-action">
+                            <img src="assets/images/statistics-report.png" class="action-icon"/>
+                            <a href="javascript:void(0)">{{ 'actions.report' | translate }}</a>
+                        </div>
+                        <div>
+                            <img src="assets/images/calendar.png" class="action-icon"/>
+                            <a href="javascript:void(0)" (click)="picker.open()">{{ 'actions.reschedule' | translate }}</a>
+                                <input matInput [matDatepicker]="picker" placeholder="Choose a date" class="invisible-input" (dateChange)="rescheduleCampaign($event, campaign, index)">
+                                <mat-datepicker #picker></mat-datepicker>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

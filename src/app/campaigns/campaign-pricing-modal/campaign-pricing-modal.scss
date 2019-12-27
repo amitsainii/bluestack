@@ -1,0 +1,93 @@
+@import './../../shared/styles/mixins.scss';
+@import './../../shared/styles/variables.scss';
+
+.modal-overlay {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-wrapper {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    padding-top: 70px;
+    @include transform (translateY(-100%));// -100% takes this out of screen used for slide up/down animation when modal is closed/opened
+    @include transition (transform 300ms linear, opacity 300ms ease-in-out);
+    &.modal-open {
+        @include transform (translateY(0%));
+        opacity: 1;
+    }
+    &.modal-before-close {//applies only for 300ms for animation when modal is closed
+        opacity: 0;
+        @include transform (translateY(-100%));
+    }
+}
+.modal {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    @media screen and (max-width: 460px) {
+        margin: 0 10px;//this is done to avoid modal from touching left and right edges of viewport for mobile devices
+    }
+}
+.modal-heading {
+    color:  $heading-color;
+    @include font-size(2.4);
+}
+.modal-footer {
+    text-align: center;
+    margin-top: 30px;
+    .close-btn {
+        border: 2px solid #181B34;
+        color: #181B34;
+        @include font-size(1.6);
+        padding: 15px 20px;
+        display: inline-block;
+    }
+}
+.campaign-heading {
+    color:  $heading-color;
+    @include font-size(1.6);
+}
+.campaign-sub-heading {
+    color: $sub-heading-color;
+    @include font-size(1.4);
+}
+.pricing-details {
+    @include font-size(1.6);
+    &>div {
+        padding: 10px 0;
+    }
+    .pricing-row {
+        .pricing-timespan {
+            color: #7788A3;
+            flex-grow: 1; //this property makes sure pricing-timespan occupy rest of available area so that pricing-value automatically shift to the right
+        }
+        .pricing-value {
+            color: #556789;
+            float: right;
+        }
+    }
+}
+.campaign-info {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end; // bottom align text with bottom of thumbnail on modal
+    img {
+        width: 137px;
+        height: 137px;
+    }
+}

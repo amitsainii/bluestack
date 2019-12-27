@@ -1,0 +1,67 @@
+[{
+    "name": "Need for Speed™ No Limits",
+    "region": "US",
+    "createdOn": 1559807714999,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 200.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 500.00"
+      }
+    ],
+    "csv": "Some CSV link for Whatsapp",
+    "report": "Some report link for Whatsapp",
+    "image_url":"assets/images/games/nfs.png" 
+  },
+  {
+    "name": "Mortal Combat",
+    "region": "FR",
+    "createdOn": 1559806711124,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 150.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 520.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 800.00"
+      }
+    ],
+    "csv": "Some CSV link for Mole Slayer",
+    "report": "Some report link for Mole Slayer",
+    "image_url":"assets/images/games/skull.png" 
+  },
+  {
+    "name": "Mancala Mix",
+    "region": "JP",
+    "createdOn": 1559806680124,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 200.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 400.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 700.00"
+      }
+    ],
+    "csv": "Some CSV link for Mancala Mix",
+    "report": "Some report link for Mancala Mix",
+    "image_url":"assets/images/games/ninja.png" 
+  }
+]

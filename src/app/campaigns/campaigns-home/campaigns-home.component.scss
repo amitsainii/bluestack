@@ -1,0 +1,71 @@
+@import './../../shared/styles/mixins.scss';
+
+.tabs-wrapper {
+	margin-bottom: 40px;
+	border-bottom: solid 1px #F1F1F4;
+	nav {
+		display: inline-block;
+	}
+}
+.tabs {
+	position: relative;
+	background-color: #fff;
+	display: flex;
+	&:after {
+		content: ' ';
+		display: table;
+		clear: both;
+	}
+	list-style: none;
+	&-tab {
+		flex-grow:1;
+		width: 33.333%;
+		text-align: center;
+		@include breakpoint(large) {
+			min-width: 210px;
+		}
+		&:first-child.active ~ .tabs-presentation-slider {
+			left: 0;
+		}
+		&:nth-child(2).active ~ .tabs-presentation-slider {
+			left: 33.333%;
+		}
+		&:nth-child(3).active ~ .tabs-presentation-slider {
+			left: calc(33.333% * 2);
+		}
+	}
+	&-presentation-slider {//green bottom border. I used transition of left property for sliding animation
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 33.333%;
+		height: 4px;
+		background-color:#83A515;
+		@include transition (left, 0.25s);
+	}
+}
+
+.tab {
+	> a {
+		display: block;
+		padding: 20px 10px;
+		text-decoration: none;
+		color:#556789;
+		@include transition (color, 0.15s);
+		@include font-size(1.8);
+		@include breakpoint(small) {
+			@include font-size(1.4);//smaller font-size for mobile devices so that tab appears perfectly on all devices
+		}
+	}
+	&.active {
+		> a {
+			color:#83A515;
+
+		}
+	}
+	&:hover {
+		> a {
+			color:#83A515;
+		}
+	}
+}

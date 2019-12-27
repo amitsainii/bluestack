@@ -1,0 +1,86 @@
+@import './../../shared/styles/mixins.scss';
+@import './../../shared/styles/variables.scss';
+
+.table-responsive {
+    overflow-x: auto;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+//no need to give special classess as shadow dom is in action here which appends rendom string code after class name inside a component
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background-color:#F1F1F4;
+    th {
+        @include font-size(1.6);
+        color:#556789;
+        padding: 12px 20px;
+        text-align: left;
+    }
+}
+tbody {
+    tr {
+        &:first-child {
+            td {
+                &>div{
+                    border-top: none;
+                }
+            }
+        }
+    }
+    td {
+        white-space: nowrap; //to avoid wrapping of text to next line on smaller screens
+        padding-top: 0;
+        vertical-align: top;
+        @include font-size(1.4);
+        &>div{
+            padding: 12px 20px;
+            border-top: 1px solid #ECECEC;
+        }
+        &:first-child {
+            &>div {
+                padding-left: 0;
+                margin-left: 20px; //used to make illusion of padding on tbody from left
+            }
+        }
+        &:last-child {
+            &>div {
+                padding-right: 0;
+                margin-right: 20px; //used to make illusion of padding on tbody from right
+            }
+        }
+        .cell-heading{
+            color:  $heading-color;	
+            @include font-size(1.6);
+            margin-bottom: 5px;
+        }
+        .cell-sub-heading{
+            color: $sub-heading-color;
+        }
+        .action-section {
+            display: flex;
+            &>div {
+                display: flex;
+                align-items: center; //vertical align
+            }
+        }
+    }
+}
+.campaign-thumb {
+    height: 40px;
+    width: 40px;
+    margin-right: 14px;
+}
+.action-icon{
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 5px;
+}
+.cell-middle-action {
+    margin: 0 40px;
+    @include breakpoint(medium) {
+        margin: 0 10px; //less space between actions on smaller screens
+    }
+}
+

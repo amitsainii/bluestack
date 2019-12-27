@@ -1,0 +1,111 @@
+[{
+    "name": "Mini Militia",
+    "region": "US",
+    "createdOn": 1576521000000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 500.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 900.00"
+      }
+    ],
+    "csv": "Some CSV link for Whatsapp",
+    "report": "Some report link for Whatsapp",
+    "image_url":"assets/images/games/skull.png"  
+  },
+  {
+    "name": "Super Jewels Quest",
+    "region": "CA, FR",
+    "createdOn": 1572978600000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 80.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 150.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 300.00"
+      }
+    ],
+    "csv": "Some CSV link for Super Jewels Quest",
+    "report": "Some report link for Super Jewels Ques",
+    "image_url":"assets/images/games/bird.png" 
+  },
+  {
+    "name": "Shadow Quest",
+    "region": "FR",
+    "createdOn": 1577039400000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 150.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 250.00"
+      }
+    ],
+    "csv": "Some CSV link for Mole Slayer",
+    "report": "Some report link for Mole Slayer",
+    "image_url":"assets/images/games/ninja.png" 
+  },
+  {
+    "name": "Call of Duty",
+    "region": "JP",
+    "createdOn": 1559806680124,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 400.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 800.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 2000.00"
+      }
+    ],
+    "csv": "Some CSV link for Mancala Mix",
+    "report": "Some report link for Mancala Mix",
+    "image_url":"assets/images/games/com.png" 
+  },
+  {
+    "name": "Need for Speed™ Most Wanted",
+    "region": "CA, FR",
+    "createdOn": 1587493800000,
+    "price": [
+      {
+        "plan": "1 Week - 1 Month",
+        "amount": "$ 50.00"
+      },
+      {
+        "plan": "6 Months",
+        "amount": "$ 100.00"
+      },
+      {
+        "plan": "1 Year",
+        "amount": "$ 2000.00"
+      }
+    ],
+    "csv": "Some CSV link for Super Jewels Quest",
+    "report": "Some report link for Super Jewels Ques",
+    "image_url":"assets/images/games/bird.png" 
+  }
+]

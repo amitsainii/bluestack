@@ -1,0 +1,30 @@
+{
+    "columns": {
+        "date": "DATA",
+        "campaign":"CAMPAGNA",
+        "view": "VISUALIZZA",
+        "actions": "AZIONI"
+    },
+    "actions": {
+        "viewPricing": "Visualizza i prezzi",
+        "csv":"CSV",
+        "report": "Rapporto",
+        "reschedule": "Riprogrammare di nuovo"
+    },
+    "titles": {
+        "header": "Gestisci Campagne",
+        "upcomingCampaigns": "Prossime Campagne",
+        "liveCampaigns": "Vivere Campagne",
+        "pastCampaigns": "Passata Campagne"
+
+    },
+    "modal": {
+        "pricing": "Prezzi",
+        "close": "Vicina"
+    },
+    "dayDiff": {
+        "today": "Oggi",
+        "past": "Giorni Fa",
+        "future": "Giorni a Venire"
+    }
+}

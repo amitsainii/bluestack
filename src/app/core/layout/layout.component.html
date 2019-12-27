@@ -1,0 +1,20 @@
+<header>
+    <div class="content">
+        <img src="assets/images/logo.png" class="logo"/>
+        <div class="language-selector">
+            <mat-button-toggle-group appearance="legacy" name="languagePicker" aria-label="Language Picker" value="en">
+                <mat-button-toggle value="en" (change)="translate.use($event.value)">
+                    <img src="assets/images/english.png" alt="english flag" class="flag-icon"/>
+                    <span class="flag-name"> English</span> <!-- this text is hidden for mobile devices to view it perfectly -->
+                </mat-button-toggle>
+                <mat-button-toggle value="it" (change)="translate.use($event.value)">
+                    <img src="assets/images/italian.png" alt="italian flag" class="flag-icon"/>
+                    <span class="flag-name"> Italian</span> <!-- this text is hidden for mobile devices to view it perfectly -->
+                </mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

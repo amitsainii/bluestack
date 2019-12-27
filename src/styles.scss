@@ -1,0 +1,58 @@
+@import './app/shared/styles/mixins.scss';
+@import './app/shared/styles/variables.scss';
+
+* {
+    // to avoid default padding margin on elements
+    margin:0; 
+    padding:0;
+}
+html {
+    font-size: 62.5%; //62.5% is used so that we can rem effecttively for example for 12px we can simply write 1.2 rem
+} 
+body {
+    @include font-size(1.4);
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    @include font-size(4.8);
+}
+a {
+    // removing default browser style from anchors
+    color: #7788A3;
+    text-decoration: none;
+}
+
+//helper classes starts
+// they are used to avoid inline styles
+.hide {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.flex-grow {
+    flex:1;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.margin-r-10{
+    margin-right: 10px;
+}
+.invisible-input {
+    height: 0;
+    width: 0;
+    border: none;
+}
+//helper classes starts
+.page-heading {
+    color: $heading-color;
+    margin: 20px 0;
+    @include breakpoint(small) {
+        //small font-size for heading on mobile devices so that it appear on one line
+        @include font-size(3.0);
+    }
+}
+.mat-button-toggle-group {
+    background-color: #fff;
+}

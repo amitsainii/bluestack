@@ -1,0 +1,30 @@
+{
+    "columns": {
+        "date": "DATE",
+        "campaign":"CAMPAIGN",
+        "view": "VIEW",
+        "actions": "ACTIONS"
+    },
+    "actions": {
+        "viewPricing": "View Pricing",
+        "csv":"CSV",
+        "report": "Report",
+        "reschedule": "Reschedule Again"
+    },
+    "titles": {
+        "header": "Manage Campaigns",
+        "upcomingCampaigns": "Upcoming Campaigns",
+        "liveCampaigns": "Live Campaigns",
+        "pastCampaigns": "Past Campaigns"
+
+    },
+    "modal": {
+        "pricing": "Pricing",
+        "close": "Close"
+    },
+    "dayDiff": {
+        "today": "Today",
+        "past": "Days Ago",
+        "future": "Days Ahead"
+    }
+}

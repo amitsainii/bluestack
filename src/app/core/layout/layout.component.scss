@@ -1,0 +1,40 @@
+@import './../../shared/styles/mixins.scss';
+
+header {
+    background-color: #1F2640;
+    padding: 8px 0;
+    img{
+        &.logo { 
+            height: 64px;
+            @include breakpoint(small) {
+                height: 50px; //small logo size for mobile devices
+            }
+        }
+    }
+    .content{
+        max-width: 1077px;
+        margin: auto;
+        padding: 0 20px;
+        display: flex;
+        .language-selector {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}
+.container {
+    max-width: 1077px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+.flag-icon{
+    height: 25px;
+    width: 25px;
+}
+@include breakpoint(medium) {
+    .flag-name {
+        display: none;
+    }
+}
